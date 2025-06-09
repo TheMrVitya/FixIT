@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 600px;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00e6e6;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li::before {
+    content: "➤ ";
+    color: #00e6e6;
+}
+
+ul li {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+a {
+    display: inline-block;
+    margin: 15px 10px 0;
+    padding: 10px 20px;
+    background-color: #00e6e6;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #00b3b3;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
